@@ -1,9 +1,9 @@
 const delay = ms => {
     
-    return new Promise(() => {
+    return new Promise((resolve) => {
         let time = ms;
         setTimeout(() => {
-            logger(time);
+            resolve(time);
         }, time);
     });
 };
